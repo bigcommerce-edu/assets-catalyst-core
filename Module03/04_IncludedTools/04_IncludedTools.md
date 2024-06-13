@@ -11,6 +11,8 @@ Styling props:
 Example notifications:
 
 ```javascript
+import { toast } from 'react-hot-toast';
+
 toast.success('This is a success message');
 
 toast.error('This is an error message');

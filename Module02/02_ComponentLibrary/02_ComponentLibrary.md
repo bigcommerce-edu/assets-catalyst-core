@@ -2,10 +2,10 @@
 
 ## Variants
 
-Using a variant:
+### Using a variant
 
 ```javascript
-import { Button } from '@bigcommerce/components/button';
+import { Button } from '~/components/ui/button';
 
 export default function MyComponent() {
   return (
@@ -19,7 +19,7 @@ export default function MyComponent() {
 Using a forwarded reference:
 
 ```javascript
-import { Badge } from '@bigcommerce/components/badge';
+import { Badge } from '~/components/ui/badge';
 import { useRef } from 'react';
 
 export default function MyComponent() {
