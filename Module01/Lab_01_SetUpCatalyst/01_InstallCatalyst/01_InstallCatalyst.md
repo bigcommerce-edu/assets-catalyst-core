@@ -14,3 +14,5 @@ npm create @bigcommerce/catalyst@0.11.0 -- --gh-ref="@bigcommerce/catalyst-core@
 cd /path/to/catalyst/project
 npm run dev
 ```
+
+[Next](../../../Module02/03_ApiClient/03_ApiClient.md)

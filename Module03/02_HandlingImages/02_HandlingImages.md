@@ -33,3 +33,5 @@ import { BcImage } from '../bc-image';
 {/* Loads an Image Manager image, but all loaded URLs will use "500w" size */}
 <BcImage src={imageManagerImageUrl("myimage.png", "500w")} width={500} />
 ```
+
+[Next](../03_ThirdPartyTools/03_ThirdPartyTools.md)

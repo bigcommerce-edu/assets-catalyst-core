@@ -1,4 +1,4 @@
-# Handling Text and Images
+# Localization
 
 ## Localizing Static Text
 
@@ -32,7 +32,7 @@ const locales = ['en', 'fr'] as const;
 
 ### Server component translations
 
-```javascript
+```typescript
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { LocaleType } from '~/i18n/routing';
 
@@ -81,8 +81,10 @@ export const AddToCart = () => {
 
 ## Channel/Locale Mapping
 
-```javascript
+```typescript
 const localeToChannelsMappings: Partial<RecordFromLocales> = {
   fr: '12345',
 };
 ```
+
+[Next](../02_HandlingImages/02_HandlingImages.md)

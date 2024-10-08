@@ -2,7 +2,7 @@
 
 Manual types:
 
-```javascript
+```typescript
 type peopleVars = {
   ids: number[];
   limit: number;
@@ -27,3 +27,5 @@ const resp = await fetch(graphQlUrl, {
   }),
 }).then(res => res.json()) satisfies peopleResp;
 ```
+
+[Next](../04_ComponentLibrary/04_ComponentLibrary.md)

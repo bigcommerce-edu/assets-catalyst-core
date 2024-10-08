@@ -17,3 +17,5 @@ const val = await kv.mget<ExpectedType>("unique/key/one");
 // Get multiple values
 const vals = await kv.mget<ExpectedType>("unique/key/one", "unique/key/two");
 ```
+
+[Next](../../Module04/Lab_01_ProductFAQProjectSetup/01_ProjectSetup/01_ProjectSetup.md)

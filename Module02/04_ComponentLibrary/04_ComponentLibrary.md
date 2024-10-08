@@ -34,3 +34,5 @@ export default function MyComponent() {
   )
 }
 ```
+
+[Next](../../Module03/01_Localization/01_Localization.md)

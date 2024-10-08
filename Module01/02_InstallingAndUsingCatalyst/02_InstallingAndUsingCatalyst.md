@@ -37,7 +37,9 @@ const config = {
 
 **Disabling ESLint Rules:**
 
-```javascript
+```typescript
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 return jsonObject as MyRespType;
 ```
+
+[Next](../03_BuiltInIntegrations/03_BuiltInIntegrations.md)

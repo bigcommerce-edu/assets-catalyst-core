@@ -27,3 +27,5 @@ npm create @bigcommerce/catalyst@latest -- --integration=makeswift
 ```
 MAKESWIFT_SITE_API_KEY={Site API Key}
 ```
+
+[Next](../Lab_01_SetUpCatalyst/01_InstallCatalyst/01_InstallCatalyst.md)
