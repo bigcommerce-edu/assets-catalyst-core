@@ -19,18 +19,18 @@ export default function MyComponent() {
 Using a forwarded reference:
 
 ```javascript
-import { Badge } from '~/components/ui/badge';
+import { Button } from '~/components/ui/button';
 import { useRef } from 'react';
 
 export default function MyComponent() {
-  const badgeRef = useRef(null);
+  const buttonRef = useRef(null);
 
   const someInteractiveFunction = () => {
-    // Use badgeRef to access a DOM element
+    // Use buttonRef to access a DOM element
   }
 
   return (
-    <Badge ref={badgeRef} />
+    <Button ref={buttonRef}>...</Button>
   )
 }
 ```

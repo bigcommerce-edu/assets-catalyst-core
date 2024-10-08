@@ -12,8 +12,8 @@ await kv.set("unique/key/one", {
 });
 
 // Get a value
-const val = await kv.get<ExpectedType>("unique/key/one");
+const val = await kv.mget<ExpectedType>("unique/key/one");
 
 // Get multiple values
-const vals = await kv.get<ExpectedType>("unique/key/one", "unique/key/two");
+const vals = await kv.mget<ExpectedType>("unique/key/one", "unique/key/two");
 ```
