@@ -4,11 +4,17 @@
 npx create-next-app@latest -e https://github.com/bigcommerce-edu/lab-catalyst-faqs/tree/starter /path/to/working/directory
 ```
 
-### Start the dev server
+### Connect your store
 
 ```shell
 cd /path/to/working/directory
-npm run dev
+npx @bigcommerce/create-catalyst@0.11.0 init
+```
+
+### Start the dev server
+
+```shell
+pnpm run dev
 ```
 
 [Next](../03_CreateFaqMetafields/3.2-3.6.md)

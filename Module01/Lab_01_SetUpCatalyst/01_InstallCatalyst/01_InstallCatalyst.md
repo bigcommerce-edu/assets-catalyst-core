@@ -5,14 +5,14 @@
 ### Run Installer
 
 ```shell
-npm create @bigcommerce/catalyst@0.11.0 -- --gh-ref="@bigcommerce/catalyst-core@0.14.2"
+npm create @bigcommerce/catalyst@latest 
 ```
 
 ## Run the Dev Server
 
 ```shell
 cd /path/to/catalyst/project
-npm run dev
+pnpm run dev
 ```
 
 [Next](../../../Module02/03_ApiClient/03_ApiClient.md)

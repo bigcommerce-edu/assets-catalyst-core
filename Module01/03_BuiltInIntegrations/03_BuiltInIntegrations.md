@@ -5,13 +5,13 @@
 **npm installation:**
 
 ```shell
-npm create @bigcommerce/catalyst@latest -- --integration=<integration-name>
+npm create @bigcommerce/catalyst@latest -- --gh-ref upstream/integrations/<integration-name>
 ```
 
 **pnpm installation:**
 
 ```shell
-pnpm create @bigcommerce/catalyst@latest --integration=<integration-name>
+pnpm create @bigcommerce/catalyst@latest --gh-ref upstream/integrations/<integration-name>
 ```
 
 ## Makeswift
@@ -19,7 +19,7 @@ pnpm create @bigcommerce/catalyst@latest --integration=<integration-name>
 **Installation:**
 
 ```shell
-npm create @bigcommerce/catalyst@latest -- --integration=makeswift
+npm create @bigcommerce/catalyst@latest -- --gh-ref upstream/integrations/makeswift
 ```
 
 **.env.local Config:**
