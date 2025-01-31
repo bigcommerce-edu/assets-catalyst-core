@@ -1,11 +1,3 @@
-# Lucide Icons
-
-Styling props:
-
-```javascript
-<User color="#446677" size={48} strokeWidth={1}  />
-```
-
 # React Hot Toast
 
 Example notifications:
@@ -18,4 +10,4 @@ toast.success('This is a success message');
 toast.error('This is an error message');
 ```
 
-[Next](../04_ProductionEnvironments/04_ProductionEnvironments.md)
+[Next](../../Module04/Lab_01_ProductFAQProjectSetup/01_ProjectSetup/01_ProjectSetup.md)

@@ -5,7 +5,7 @@
 ### Run Installer
 
 ```shell
-npm create @bigcommerce/catalyst@latest 
+corepack enable pnpm && pnpm create @bigcommerce/catalyst@0.20.0 --gh-ref @bigcommerce/catalyst-core@makeswift-1.0.0-rc.3
 ```
 
 ## Run the Dev Server

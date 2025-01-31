@@ -1,62 +1,57 @@
 # Localization
 
-## Localizing Static Text
+## Translations for Static Text
 
 ### en.json translations
 
 ```json
-"Home": {
-  "Carousel": {
-    "featuredProducts": "Featured Products",
-    "newestProducts": "Newest products"
-  }
-}
+"ChangePassword": {
+    "title": "Change password",
+    "heading": "Change password",
+    "Form": {
+      "newPasswordLabel": "New password",
+      "confirmPasswordLabel": "Confirm password",
+      ...
+    },
+    ...
+  },
 ```
 
 ### fr.json translations
 
 ```json
-"Home": {
-  "Carousel": {
-    "featuredProducts": "Produits en vedette",
-    "newestProducts": "Nouveaux produits"
-  }
-}
-```
-
-### i18n.ts config
-
-```javascript
-const locales = ['en', 'fr'] as const;
+"ChangePassword": {
+  "title": "Modifier le mot de passe",
+  "heading": "Modifier le mot de passe",
+  "Form": {
+    "newPasswordLabel": "Nouveau mot de passe",
+    "confirmPasswordLabel": "Confirmer le mot de passe",
+    ...
+  },
+  ...
+},
 ```
 
 ### Server component translations
 
 ```typescript
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { LocaleType } from '~/i18n/routing';
+import { getTranslations } from 'next-intl/server';
 
-interface Props {
-  params: {
-    locale: LocaleType;
-  };
-}
+...
 
-export default async function Home({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
+export default async function ChangePassword({ searchParams }: Props) {
+  ...
+  const t = await getTranslations('ChangePassword');
 
-  const t = await getTranslations('Home' );
+  ...
 
   return (
-    <>
-      {/* ... */}
-      
-      <div className="my-10">
-        <ProductCardCarousel
-          {/* ... */}
-          title={t('Carousel.featuredProducts')}
-        />
-    </>
+    <ResetPasswordSection
+      ...
+      confirmPasswordLabel={t('Form.confirmPasswordLabel')}
+      newPasswordLabel={t('Form.newPasswordLabel')}
+      title={t('heading')}
+    />
   );
 }
 ```
@@ -68,21 +63,33 @@ export default async function Home({ params: { locale } }: Props) {
 
 import { useTranslations } from 'next-intl';
 
-export const AddToCart = () => {
-  const t = useTranslations('Product.ProductSheet');
+export const AddToCartButton = (...) => {
+  const t = useTranslations('Components.AddToCartButton');
+
+  const buttonText = () => {
+    ...
+
+    return t('addToCart');
+  };
 
   return (
-    <Button type="submit">
-        t('addToCart')
+    <Button
+      ...
+      loadingText={t('processing')}
+    >
+      ...
+      {buttonText()}
     </Button>
   );
 };
 ```
 
-## Channel/Locale Mapping
+## Multi-Storefront Localization
+
+**Channel/locale mapping in channels.config.ts:**
 
 ```typescript
-const localeToChannelsMappings: Partial<RecordFromLocales> = {
+const localeToChannelsMappings: Record<string, string> = {
   fr: '12345',
 };
 ```

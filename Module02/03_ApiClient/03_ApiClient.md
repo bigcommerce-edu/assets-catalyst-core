@@ -28,4 +28,4 @@ const resp = await fetch(graphQlUrl, {
 }).then(res => res.json()) satisfies peopleResp;
 ```
 
-[Next](../04_ComponentLibrary/04_ComponentLibrary.md)
+[Next](../04_SoulUILibrary/04_SoulUILibrary.md)

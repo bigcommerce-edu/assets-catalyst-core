@@ -1,19 +1,19 @@
 # Handling Images
 
-### BCImage example
+### Image example
 
 ```javascript
-<BcImage
+<Image
   src={obj.image.urlTemplate}
   width={500}
   height={500}
 />
 ```
 
-### BCImage with sizing
+### Image with sizing
 
 ```javascript
-<BcImage
+<Image
   src={obj.image.urlTemplate}
   width={500}
   height={500}
