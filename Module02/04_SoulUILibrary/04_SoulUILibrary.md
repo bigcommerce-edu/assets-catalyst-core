@@ -7,7 +7,7 @@
 #### Using a variant
 
 ```javascript
-import { Button } from '~/components/ui/button';
+import { Button } from '@/vibes/soul/primitives/button';
 
 export default function MyComponent() {
   return (
