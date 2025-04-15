@@ -1,8 +1,10 @@
-# Localization
+# Internationalization
 
 ## Translations for Static Text
 
-### en.json translations
+### Storing Translations
+
+**Translations example:**
 
 ```json
 "ChangePassword": {
@@ -17,20 +19,7 @@
   },
 ```
 
-### fr.json translations
-
-```json
-"ChangePassword": {
-  "title": "Modifier le mot de passe",
-  "heading": "Modifier le mot de passe",
-  "Form": {
-    "newPasswordLabel": "Nouveau mot de passe",
-    "confirmPasswordLabel": "Confirmer le mot de passe",
-    ...
-  },
-  ...
-},
-```
+## Using Keys in React Components
 
 ### Server component translations
 
@@ -59,34 +48,28 @@ export default async function ChangePassword({ searchParams }: Props) {
 ### Client component translations
 
 ```javascript
-'use client';
-
 import { useTranslations } from 'next-intl';
 
-export const AddToCartButton = (...) => {
-  const t = useTranslations('Components.AddToCartButton');
-
-  const buttonText = () => {
-    ...
-
-    return t('addToCart');
-  };
+export const Footer = () => {
+  const t = useTranslations('Components.Footer');
 
   return (
-    <Button
+    <FooterSection
       ...
-      loadingText={t('processing')}
-    >
+      contactTitle={t('contact')}
       ...
-      {buttonText()}
-    </Button>
+      logoLabel={t('home')}
+      ...
+    />
   );
 };
 ```
 
-## Multi-Storefront Localization
+## Multi-Storefront
 
-**Channel/locale mapping in channels.config.ts:**
+## Path-Based
+
+**Channel/locale mapping in `channels.config.ts`:**
 
 ```typescript
 const localeToChannelsMappings: Record<string, string> = {

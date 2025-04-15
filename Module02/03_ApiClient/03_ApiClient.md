@@ -1,4 +1,6 @@
-# Type Safety
+# The API Client
+
+## Type Safety
 
 Manual types:
 
@@ -28,4 +30,16 @@ const resp = await fetch(graphQlUrl, {
 }).then(res => res.json()) satisfies peopleResp;
 ```
 
-[Next](../04_SoulUILibrary/04_SoulUILibrary.md)
+## Caching and Streaming
+
+### Suspense and Streaming
+
+**Suspense example:**
+
+```javascript
+<Suspense fallback={<FallbackComponent />}>
+  <ProductInfo productId={...} />
+</Suspense>
+```
+
+[Next](../04_ComponentsTheming/04_ComponentsTheming.md)

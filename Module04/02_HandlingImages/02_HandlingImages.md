@@ -25,13 +25,15 @@
 
 ```javascript
 import { contentImageUrl, imageManagerImageUrl } from '~/lib/store-assets';
-import { BcImage } from '../bc-image';
+import { Image } from '~/components/image';
+
+...
 
 {/* Loads a WebDAV content image with dynamic srcset support */}
-<BcImage src={contentImageUrl("myimage.png")} width={500} />
+<Image src={contentImageUrl("myimage.png")} width={500} />
 
 {/* Loads an Image Manager image, but all loaded URLs will use "500w" size */}
-<BcImage src={imageManagerImageUrl("myimage.png", "500w")} width={500} />
+<Image src={imageManagerImageUrl("myimage.png", "500w")} width={500} />
 ```
 
-[Next](../03_ThirdPartyTools/03_ThirdPartyTools.md)
+[Next](../Lab_01_DeployToVercel/Lab_01_DeployToVercel.md)

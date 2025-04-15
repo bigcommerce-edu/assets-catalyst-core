@@ -3,14 +3,14 @@
 ### Run install
 
 ```shell
-corepack enable pnpm && pnpx create-next-app@latest -e https://github.com/bigcommerce-edu/lab-catalyst-makeswift-faqs/tree/bcu-cat-start /path/to/working/directory
+corepack enable pnpm && pnpx create-next-app@latest -e https://github.com/bigcommerce-edu/lab-catalyst-makeswift-faqs/tree/cat-start /path/to/working/directory
 ```
 
 ### Connect your store
 
 ```shell
 cd /path/to/working/directory
-pnpx @bigcommerce/create-catalyst@0.20.0 init
+pnpm dlx @bigcommerce/create-catalyst@0.21.0 init
 ```
 
 ### Start the dev server

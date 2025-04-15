@@ -1,4 +1,4 @@
-# The Catalyst CLI Installer
+# The Development Environment
 
 **Installing Catalyst:**
 
@@ -24,7 +24,7 @@ corepack enable pnpm && pnpm create @bigcommerce/catalyst@latest --store-hash <m
 **With help option:**
 
 ```shell
-pnpx @bigcommerce/create-catalyst@latest create --help
+pnpm dlx @bigcommerce/create-catalyst@latest create --help
 ```
 
 ## Connecting a BigCommerce Store
@@ -32,7 +32,7 @@ pnpx @bigcommerce/create-catalyst@latest create --help
 **Automatic reinitialization:**
 
 ```shell
-pnpx @bigcommerce/create-catalyst@latest init
+pnpm dlx @bigcommerce/create-catalyst@latest init
 ```
 
 ## ESLint Configuration
