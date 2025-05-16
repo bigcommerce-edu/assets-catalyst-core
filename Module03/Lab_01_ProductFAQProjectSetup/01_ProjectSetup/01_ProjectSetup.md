@@ -10,7 +10,7 @@ corepack enable pnpm && pnpx create-next-app@latest -e https://github.com/bigcom
 
 ```shell
 cd /path/to/working/directory
-pnpm dlx @bigcommerce/create-catalyst@0.21.0 init
+pnpm dlx @bigcommerce/create-catalyst@0.22.0 init
 ```
 
 ### Start the dev server
