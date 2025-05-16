@@ -81,7 +81,7 @@ toast.success('This is a success message');
 toast.error('This is an error message');
 ```
 
-## Asynchornous Rendering with Stream
+## Asynchronous Rendering with Stream
 
 **Stream example:**
 
