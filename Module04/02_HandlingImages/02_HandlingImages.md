@@ -3,6 +3,10 @@
 ### Image example
 
 ```javascript
+import { Image } from '~/components/image';
+
+...
+
 <Image
   src={obj.image.urlTemplate}
   width={500}

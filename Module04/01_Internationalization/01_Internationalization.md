@@ -8,15 +8,12 @@
 
 ```json
 "ChangePassword": {
-    "title": "Change password",
-    "heading": "Change password",
-    "Form": {
-      "newPasswordLabel": "New password",
-      "confirmPasswordLabel": "Confirm password",
-      ...
-    },
-    ...
-  },
+  "title": "Change password",
+  "newPassword": "New password",
+  "confirmPassword": "Confirm password",
+  "passwordUpdated": "Password has been updated successfully!",
+  "somethingWentWrong": "Something went wrong. Please try again later."
+},
 ```
 
 ## Using Keys in React Components
@@ -28,18 +25,18 @@ import { getTranslations } from 'next-intl/server';
 
 ...
 
-export default async function ChangePassword({ searchParams }: Props) {
+export default async function ChangePassword({ params, searchParams }: Props) {
   ...
-  const t = await getTranslations('ChangePassword');
+  const t = await getTranslations('Auth.ChangePassword');
 
   ...
 
   return (
     <ResetPasswordSection
       ...
-      confirmPasswordLabel={t('Form.confirmPasswordLabel')}
-      newPasswordLabel={t('Form.newPasswordLabel')}
-      title={t('heading')}
+      confirmPasswordLabel={t('confirmPassword')}
+      newPasswordLabel={t('newPassword')}
+      title={t('title')}
     />
   );
 }
@@ -50,19 +47,27 @@ export default async function ChangePassword({ searchParams }: Props) {
 ```javascript
 import { useTranslations } from 'next-intl';
 
-export const Footer = () => {
+export function ProductFaqs({
+  ...
+}: {
+  ...
+}) {
+  ...
   const t = useTranslations('Components.Footer');
 
-  return (
-    <FooterSection
-      ...
-      contactTitle={t('contact')}
-      ...
-      logoLabel={t('home')}
-      ...
-    />
+  ...
+
+  return allFaqs.length <= 0 ? '' : (
+    <section ...>
+      <div ...>
+        <h2 ...>
+          {t('heading')}
+        </h2>
+        ...
+      </div>
+    </section>
   );
-};
+}
 ```
 
 ## Multi-Storefront

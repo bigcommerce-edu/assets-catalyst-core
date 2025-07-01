@@ -13,7 +13,7 @@ corepack enable pnpm && pnpm create @bigcommerce/catalyst@latest --gh-ref upstre
 **Installation:**
 
 ```shell
-pnpm create @bigcommerce/catalyst@latest --gh-ref @bigcommerce/catalyst-core@makeswift-canary
+pnpm create @bigcommerce/catalyst@latest --gh-ref @bigcommerce/catalyst-makeswift@latest
 ```
 
 [Next](../Lab_01_SetUpCatalyst/01_InstallCatalyst/01_InstallCatalyst.md)
