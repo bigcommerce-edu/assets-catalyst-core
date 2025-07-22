@@ -1,3 +1,3 @@
-# Catalyst Essentials Code Assets
+# Catalyst Core Code Assets
 
-The code snippets in this package are assets for the BigCommerce Catalyst Essentials training course.
+The code snippets in this package are assets for the BigCommerce Catalyst Core training course.
