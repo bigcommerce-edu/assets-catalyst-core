@@ -39,5 +39,3 @@ import { Image } from '~/components/image';
 {/* Loads an Image Manager image, but all loaded URLs will use "500w" size */}
 <Image src={imageManagerImageUrl("myimage.png", "500w")} width={500} />
 ```
-
-[Next](../Lab_01_DeployToVercel/Lab_01_DeployToVercel.md)

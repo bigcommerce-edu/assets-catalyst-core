@@ -27,6 +27,12 @@ corepack enable pnpm && pnpm create @bigcommerce/catalyst@latest --store-hash <m
 pnpm dlx @bigcommerce/create-catalyst@latest create --help
 ```
 
+**Installing with Makeswift:**
+
+```shell
+pnpm create @bigcommerce/catalyst@latest --gh-ref @bigcommerce/catalyst-makeswift@latest
+```
+
 ## Connecting a BigCommerce Store
 
 **Automatic reinitialization:**
@@ -61,6 +67,3 @@ const config = {
 ```typescript
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 return jsonObject as MyRespType;
-```
-
-[Next](../04_BuiltInIntegrations/04_BuiltInIntegrations.md)

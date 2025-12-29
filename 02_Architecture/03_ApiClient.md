@@ -41,5 +41,3 @@ const resp = await fetch(graphQlUrl, {
   <ProductInfo productId={...} />
 </Suspense>
 ```
-
-[Next](../04_ComponentsTheming/04_ComponentsTheming.md)

@@ -46,26 +46,21 @@ export default async function ChangePassword({ params, searchParams }: Props) {
 
 ```javascript
 import { useTranslations } from 'next-intl';
-
-export function ProductFaqs({
+ 
+export function LoadMoreFaqs({
   ...
-}: {
+}: LoadMoreFaqsProps) {
   ...
-}) {
+  const t = useTranslations('Product.FAQ');
+ 
   ...
-  const t = useTranslations('Components.Footer');
-
-  ...
-
-  return allFaqs.length <= 0 ? '' : (
-    <section ...>
-      <div ...>
-        <h2 ...>
-          {t('heading')}
-        </h2>
-        ...
-      </div>
-    </section>
+ 
+  return (
+    ...
+          <Button>
+            {t('loadMore')}
+          </Button>
+    ...
   );
 }
 ```
@@ -81,5 +76,3 @@ const localeToChannelsMappings: Record<string, string> = {
   fr: '12345',
 };
 ```
-
-[Next](../02_HandlingImages/02_HandlingImages.md)

@@ -18,5 +18,3 @@ pnpm dlx @bigcommerce/create-catalyst@1.0.0 init
 ```shell
 pnpm run dev
 ```
-
-[Next](../03_CreateFaqMetafields/3.2-3.7.md)

@@ -49,5 +49,3 @@ function BlogPost({
   );
 }
 ```
-
-[Next](../03_ApiClient/03_ApiClient.md)
