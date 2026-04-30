@@ -22,7 +22,7 @@ Using **metafields**, you'll attach FAQ records to a product, then utilize custo
 
 ## Step 1: Set Up Environment
 
-[Metafields](https://developer.bigcommerce.com/docs/rest-catalog/products/metafields) are custom key/value pairs that can be assigned to various entities in BigCommerce, including products, allowing you a free-form method to express any arbitrary data that doesn't fit into the schema of BigCommerce's native fields. You'll be inserting metafields to represent "frequently asked question" (FAQ) records on a product.
+[Metafields](https://docs.bigcommerce.com/developer/docs/rest-catalog/products/metafields) are custom key/value pairs that can be assigned to various entities in BigCommerce, including products, allowing you a free-form method to express any arbitrary data that doesn't fit into the schema of BigCommerce's native fields. You'll be inserting metafields to represent "frequently asked question" (FAQ) records on a product.
 
 Adding or updating metafields requires the use of the BigCommerce REST Management API, so you'll be utilizing Postman in this section to build the appropriate requests. In a real-world scenario in which non-technical users need the ability to edit these FAQs, you would likely develop a small companion app to manage them, or else install an app from the BigCommerce marketplace to enable a UI interface for metafields in general.
 

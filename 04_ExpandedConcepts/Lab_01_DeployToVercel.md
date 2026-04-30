@@ -5,7 +5,7 @@
 * A command-line interface on your local machine
 * The [Git](https://git-scm.com/) CLI
 * An existing account on [GitHub](https://github.com/) (or your preferred Git provider), with a personal access token or SSH key configured to allow pushing to repositories from the CLI
-* An existing account on [Vercel](https://vercel.com/), [connected](https://vercel.com/docs/getting-started-with-vercel/import#connect-to-your-git-provider) to your GitHub account
+* An existing account on [Vercel](https://vercel.com/), [connected](https://vercel.com/docs/getting-started-with-vercel) to your GitHub account
 
 If you are setting up a GitHub account for the first time, see the documentation for [signing in with a passkey](https://docs.github.com/en/authentication/authenticating-with-a-passkey/signing-in-with-a-passkey) or for [](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)[generating an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
@@ -80,7 +80,7 @@ With the completion of this hands-on lab, you have a publicly available custom C
 
 In a real-world scenario, once you are able to configure a domain name to point to your hosted storefront, your final step would be to reconfigure your base URL settings in BigCommerce and Makeswift.
 
-1. **Configure** the primary domain of your storefront channel to match your deployed custom front-end. This can be done in the Domains settings for your channel in the store control panel, or with the [Channel Sites](https://developer.bigcommerce.com/docs/rest-management/channels/site) capabilities of the REST Management API.
+1. **Configure** the primary domain of your storefront channel to match your deployed custom front-end. This can be done in the Domains settings for your channel in the store control panel, or with the [Channel Sites](https://docs.bigcommerce.com/developer/docs/rest-management/channels/site) capabilities of the REST Management API.
 2. **Update** the checkout domain of your channel as well. Checkout strategy may vary, but to maintain the default redirected checkout experience used by Catalyst by default, configure a CNAME record for an appropriate subdomain pointing to your storefront channel's canonical URL. (For example `checkout.mystore.com`, pointing to `store-{{store_hash}}-{{channel_id}}.mybigcommerce.com`.) Set this subdomain as the checkout URL for your channel.
 3. **Log into** the Makeswift editor with the "Edit in Makeswift" action in Channel Manager, then use the Host settings for your primary Makeswift site to **update** the site's URL.
 4. **Update** the `MAKESWIFT_SITE_API_KEY` environment variable in your hosting environment with the API key of your primary Makeswift site.
