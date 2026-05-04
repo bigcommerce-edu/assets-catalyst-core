@@ -6,7 +6,7 @@
 * [App Router](https://nextjs.org/docs/app/getting-started/layouts-and-pages)
 * [React Server Components](https://nextjs.org/docs/app/getting-started/server-and-client-components)
 * [Next.js Route Groups](https://nextjs.org/docs/app/api-reference/file-conventions/route-groups)
-* [Next.js Middleware](https://nextjs.org/docs/15/app/api-reference/file-conventions/middleware)
+* [Next.js Middleware](https://nextjs.org/docs/16/app/api-reference/file-conventions/middleware)
 * [Upstash for Redis](https://upstash.com/)
 * [Vercel Runtime Cache](https://vercel.com/docs/functions/functions-api-reference/vercel-functions-package#getcache)
 * [API Client](https://docs.bigcommerce.com/developer/docs/storefront/catalyst/reference/client)
