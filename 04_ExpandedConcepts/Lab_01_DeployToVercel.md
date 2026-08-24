@@ -55,6 +55,7 @@ If you have not connected a Git account, you'll have the chance to do so when yo
 
 5. **Enter** each of the variables found in your local file `.env.local` with the same values. You can do this by selecting the entire contents of `.env.local` and pasting in the first var `key` field.
 
+**Exclude** `CATALYST_ACCESS_TOKEN` when copying these values. This variable is only used by the Catalyst CLI on your local machine and is never read by the storefront application at build time or runtime, so it does not belong in your Vercel deployment.
 
 Keep in mind that, since you've copied your local project's configuration settings, `MAKESWIFT_SITE_API_KEY` contains the API key for the developer site in your Makeswift workspace. Once you have updated the domain name of your storefront channel and Makeswift site to point to your own hosted Catalyst application, make sure to update this value with the appropriate API key.
 
