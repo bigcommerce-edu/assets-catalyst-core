@@ -38,7 +38,7 @@ pnpm create @bigcommerce/catalyst@latest --gh-ref @bigcommerce/catalyst-makeswif
 **Automatic reinitialization:**
 
 ```shell
-pnpm catalyst channel link
+pnpm catalyst channels link
 ```
 
 ## ESLint Configuration
