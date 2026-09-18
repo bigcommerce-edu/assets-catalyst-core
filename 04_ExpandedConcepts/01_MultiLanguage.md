@@ -1,4 +1,4 @@
-# Internationalization
+# Multi-Language
 
 ## Translations for Static Text
 
